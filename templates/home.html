@@ -8,4 +8,9 @@
     <h3>Con templates</h3>
     <p>{{ myText }}</p>
     <p>{{ myNumber }}</p>
+    <ul>    
+        {% for item in myList %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
