@@ -10,7 +10,10 @@
     <p>{{ myNumber }}</p>
     <ul>    
         {% for item in myList %}
-            <li>{{forloop.counter}}-{{ item }}</li>
+            <li>{{forloop.counter0}}-{{ item }}</li>
+            {%if forloop.first %}
+                <li>(primero) - {{item}}</li>
+            {% endif %}
             {%if forloop.counter|divisibleby:"2" %}
                 <li></li>
             {% endif %}
