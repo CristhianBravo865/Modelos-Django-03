@@ -11,6 +11,9 @@
     <ul>    
         {% for item in myList %}
             <li>{{forloop.counter}}-{{ item }}</li>
+        {%empty%}
+            <p> No hay elementos en la lista</p>
         {% endfor %}
+
     </ul>
 {% endblock %}
