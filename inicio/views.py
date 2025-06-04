@@ -5,7 +5,7 @@ def myHomeView(request, *args, **kwargs):
     myContext = {
         'myText': 'Esto es sobre nosotros',
         'myNumber': 123,
-        'myList': [],
+        'myList': [8,5,3,6,2],
     }
     return render(request, 'home.html', myContext) #Contexto
 def anotherView(request):

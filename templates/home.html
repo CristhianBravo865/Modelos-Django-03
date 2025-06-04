@@ -11,6 +11,9 @@
     <ul>    
         {% for item in myList %}
             <li>{{forloop.counter}}-{{ item }}</li>
+            {%if forloop.counter|divisibleby:"2" %}
+                <li></li>
+            {% endif %}
         {%empty%}
             <p> No hay elementos en la lista</p>
         {% endfor %}
