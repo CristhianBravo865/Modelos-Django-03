@@ -1,0 +1,12 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Mi sitio{% endblock %}</title>
+</head>
+<body>
+    {% include 'nav.html' %}
+    {% block contenido %}{% endblock %}
+</body>
+</html>
