@@ -10,7 +10,7 @@
     <p>{{ myNumber }}</p>
     <ul>    
         {% for item in myList %}
-            <li>{{ item }}</li>
+            <li>{{forloop.counter}}-{{ item }}</li>
         {% endfor %}
     </ul>
 {% endblock %}
