@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+  <h2>Pruebas con filtros en DTL</h2>
+
+  <p>Texto en minúscula: {{ nombre|lower }}</p>
+  <p>Texto en mayúscula: {{ nombre|upper }}</p>
+  <p>Longitud de la lista: {{ lista|length }}</p>
+  <p>Fecha actual formateada: {{ fecha|date:'d/m/Y H:i' }}</p>
+  <p>Número + 5: {{ numero|add:'5' }}</p>
+  <p>Variable vacía con default: {{ vacia|default:'Sin valor' }}</p>
+{% endblock %}
