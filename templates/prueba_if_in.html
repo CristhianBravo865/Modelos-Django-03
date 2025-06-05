@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h2>Prueba con 'in' y 'not in'</h2>
+<p>Color actual: {{ color }}</p>
+
+{% if color in colores %}
+    <p>El color está en la lista</p>
+{% endif %}
+
+{% if color not in colores %}
+    <p>El color NO está en la lista</p>
+{% endif %}
+{% endblock %}

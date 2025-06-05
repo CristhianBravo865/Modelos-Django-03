@@ -12,3 +12,9 @@ def anotherView(request):
     return HttpResponse("<h1>Solo otra pagina</h1>")
 def prueba_if_basico(request):
     return render(request, 'prueba_if_basico.html', {'numero': 40})
+def prueba_if_in(request):
+    contexto = {
+        'color': 'rojo',
+        'colores': ['rojo', 'verde', 'azul']
+    }
+    return render(request, 'prueba_if_in.html', contexto)
