@@ -2,11 +2,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Hola Mundo desde DJango</h2>
+<h2>Hola Mundo desde Django</h2>
 <h3>Con templates</h3>
 
 <p>
-    {{ myText }}, {{ myNumber }}
+    {{ myText|upper }},
+    {{ myNumber }}
 </p>
 
 <ul>
@@ -21,4 +22,5 @@
     {% endfor %}
 </ul>
 {% endblock %}
+
 
