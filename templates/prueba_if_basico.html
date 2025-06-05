@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<h2>Prueba básica de operadores</h2>
+<p>Número: {{ numero }}</p>
+
+{% if numero != 33 %}
+    <p>El número no es 33</p>
+{% endif %}
+
+{% if numero < 50 %}
+    <p>El número es menor que 50</p>
+{% endif %}
+
+{% if numero > 30 %}
+    <p>El número es mayor que 30</p>
+{% endif %}
+{% endblock %}

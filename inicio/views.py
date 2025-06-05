@@ -10,3 +10,5 @@ def myHomeView(request, *args, **kwargs):
     return render(request, 'home.html', myContext) #Contexto
 def anotherView(request):
     return HttpResponse("<h1>Solo otra pagina</h1>")
+def prueba_if_basico(request):
+    return render(request, 'prueba_if_basico.html', {'numero': 40})
