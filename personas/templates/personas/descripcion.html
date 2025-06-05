@@ -1,12 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{ objeto.nombres }}</h1>
-<h2>
-  {% if objeto.edad > 40 %}
-    debe cuidarse del colesterol
-  {% else %}
-    puede comer lo que quiera
-  {% endif %}
-</h2>
+<h1>Descripción de la Persona</h1>
+<ul>
+  <li><strong>Nombre:</strong> {{ objeto.nombre }}</li>
+  <li><strong>Apellido:</strong> {{ objeto.apellido }}</li>
+  <li><strong>Edad:</strong> {{ objeto.edad }}</li>
+  <li><strong>¿Donador?:</strong> 
+    {% if objeto.donador %}
+      Sí
+    {% else %}
+      No
+    {% endif %}
+  </li>
+</ul>
 {% endblock %}
