@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Persona
-from .forms import PersonaForm
+from .form import PersonaForm
 # Create your views here.
 def personaTestView(request):
     obj = Persona.objects.get(id=1)
@@ -17,4 +17,4 @@ def personaCreateView(request):
     context = {
         'form': form,
     }
-    return render(request, 'personas/personasCreate.html', context)
+    return render(request, 'personas/personascreate.html', context)

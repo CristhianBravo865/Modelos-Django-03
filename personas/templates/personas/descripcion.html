@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block contenido %}
 <h1>Descripción de la Persona</h1>
 <ul>
-  <li><strong>Nombre:</strong> {{ objeto.nombre }}</li>
-  <li><strong>Apellido:</strong> {{ objeto.apellido }}</li>
+  <li><strong>Nombre:</strong> {{ objeto.nombres }}</li>
+  <li><strong>Apellido:</strong> {{ objeto.apellidos }}</li>
   <li><strong>Edad:</strong> {{ objeto.edad }}</li>
   <li><strong>¿Donador?:</strong> 
     {% if objeto.donador %}
