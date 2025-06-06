@@ -21,10 +21,11 @@ from inicio.views import anotherView
 from personas.views import personaTestView
 from django.urls import path
 from personas.views import personaTestView, personaCreateView
-
+from personas import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', personaTestView, name='home'),
     path('persona/', personaTestView, name='testViewPersona'),
     path('agregar/', personaCreateView, name='agregar_persona'),
+    path('search/', views.searchForHelp, name='buscar'),
 ]
